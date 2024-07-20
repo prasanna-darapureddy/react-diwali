@@ -1,0 +1,24 @@
+html {
+    scroll-behavior: smooth;
+  }
+.menu{
+    text-decoration: none;
+    color: #521407;
+}
+button a:active, button a:focus, .menu:hover, #active, .active{
+    
+    background-color: #ffd030;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 135px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 135px;
+    padding: 5px 25px;
+    font-family: 'raleway';
+    font-weight: 600;
+    
+}
+#menuBar{
+    top: 50px;
+    width: 100%;
+    transition: top 0.3s;
+}

@@ -1,0 +1,95 @@
+.content-container{
+    margin-top: 20px;
+    text-align: left;
+}
+.happy-diwali-img{
+    max-width: 80%;
+    display: inline;
+}
+.small-happy-diwali-img{
+    max-width: 400px;
+}
+.wishes-heading{
+    color: #521407;
+    font-size: 55px;
+    font-weight: 900;
+    text-align: left;
+}
+.wishes-content{
+    text-align: left;
+    font-size: 18px;
+    color: #836d69;
+    font-family: 'Montserrat', sans-serif;
+}
+.read-button{
+    background-color: #ffd030;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 135px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 135px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600 ;
+    color: #521407;
+    text-align: left;
+}
+@media screen and (max-width: 576px) {
+    .content-container{
+        text-align: center;
+    }
+    .happy-diwali-img{
+        display: none;
+    }
+    .small-happy-diwali-img{
+        max-width: 250px;
+        text-align: center;
+    }
+    .wishes-heading{
+        font-size: 30px;
+        text-align: center;
+    }
+    .wishes-content, .read-button{
+        font-size: 14px;
+        padding: 10px;       
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    .wishes-content{
+        color: #836d69;
+    }
+    #home{
+        height: 300px;
+        width: 100%;
+    }
+}
+@media screen and (min-width:577px) and (max-width: 768px)  {
+    
+    .happy-diwali-img{
+        display: none;
+    }
+    .small-happy-diwali-img{
+        max-width: 299px;
+        text-align: center;
+    }
+    .content-container{
+        text-align: center;
+    }
+    .wishes-heading{
+        font-size: 35px;
+        text-align: center;
+    }
+    .wishes-content, .read-button{
+        font-size: 17px;
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .wishes-content{
+        color: #836d69;
+    }
+    #home{
+        height: 400px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,133 @@
+.contact-bg-container {
+  background-image: url("../../assets/slider-1.png");
+  background-size: cover;
+  padding: 70px 0px;
+  background-position: bottom center;
+  background-attachment: fixed;
+  width: 100%;
+}
+.contact-container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+.contact-heading {
+  align-self: center;
+  font-size: 50px;
+  color: #521407;
+  font-weight: 900;
+  padding: 0;
+  letter-spacing: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first-inputs {
+  display: flex;
+}
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+form.shake {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  25% {
+    transform: translate(4px);
+  }
+  50% {
+    transform: translate(-4px);
+  }
+  75% {
+    transform: translate(4px);
+  }
+}
+
+.user-input {
+  border: none;
+  outline: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 3px;
+}
+.name-input,
+.mail-input {
+  width: 100%;
+}
+.mail-input {
+  margin-left: 10px;
+}
+.message-input {
+  resize: none;
+  height: 100px;
+  width: 100%;
+}
+.send-button {
+  color: #521407;
+  background-color: #ffd030;
+  padding: 10px;
+  width: 150px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  align-self: center;
+}
+.footer-container {
+  background: #521407;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 50px;
+}
+.error-msg {
+  color: red;
+  margin-top: 0px;
+}
+.question {
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 561px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-container {
+    text-align: center;
+    font-size: 12px;
+  }
+  .contact-heading {
+    font-size: 30px;
+  }
+  .first-inputs {
+    flex-direction: column;
+  }
+  .mail-input {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 562px) and (max-width: 768px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-container {
+    text-align: center;
+    font-size: 12px;
+  }
+  .contact-heading {
+    font-size: 30px;
+  }
+}

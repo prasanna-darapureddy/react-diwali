@@ -1,0 +1,31 @@
+.loading-container{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-position: center;
+}
+.loader{
+    min-width: 100%;
+    min-height: 100vh;
+}
+.body-content{
+    width: 100%;
+    position: absolute;   
+}
+.up-arrow-icon{
+    position:sticky;
+    left: 95%;
+    right: 10px;
+    bottom: 10px;
+    background-color: #ffd030;
+    color:#521407;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.up-arrow-link{
+    scroll-behavior: smooth;
+}

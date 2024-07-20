@@ -1,0 +1,67 @@
+.list-item{
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 20%;
+}
+.watch-img{
+    max-height: 210px;
+    max-width: 210px;
+}
+.prices-container{
+    margin-bottom: 20px;
+}
+.striked-price{
+    color: #808080;
+    text-decoration: line-through;
+    font-size: 18px;
+}
+.offer-price{
+    color: #86bd57;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.rating-container{
+    display: flex;
+    justify-content: center;
+}
+.stars{
+    color: orange;
+    font-size: 20px;
+}
+.empty-star{
+    color:  orange;
+    font-size: 20px;
+}
+.view-button{
+    color: #333;
+    border-radius: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin-top: 15px;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
+@media screen and (max-width: 576px) {
+    .list-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;     
+        width: 20%;
+    }
+}
+@media screen and (min-width:577px) and (max-width: 768px) {
+    .list-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;     
+        width: 20%;
+    }
+}
