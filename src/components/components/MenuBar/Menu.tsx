@@ -37,6 +37,7 @@ function MenuBar() {
     window.addEventListener('scroll', stickNavbar);
     return () => window.removeEventListener('scroll', stickNavbar);
   }, []);
+  
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;

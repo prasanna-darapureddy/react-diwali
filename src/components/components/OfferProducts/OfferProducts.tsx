@@ -117,9 +117,9 @@ interface IState {
 
 function OfferProducts() {
     const [productsList, setProductsList] = useState<IState['productsList']>(initialProductsList.slice(0, 4))
-    const [firstButton, setFirstButtonClassName] = useState<IState['firstButtonClassName']>(true)
-    const [secondButton, setSecondButtonClassName] = useState<IState['secondButtonClassName']>(false)
-    const [thirdButton, setThirdButtonClassName] = useState<IState['thirdButtonClassName']>(false)
+    const [firstButtonClassName, setFirstButtonClassName] = useState<IState['firstButtonClassName']>(true)
+    const [secondButtonClassName, setSecondButtonClassName] = useState<IState['secondButtonClassName']>(false)
+    const [thirdButtonClassName, setThirdButtonClassName] = useState<IState['thirdButtonClassName']>(false)
 
 
     const onFirstButton = () => {
@@ -142,28 +142,26 @@ function OfferProducts() {
     }
 
     return (
-        <>
-            <div className='offers-container' id='Best Deals'>
-                <h1 className='offers-heading'>Diwali Offers products</h1>
+        <div className='offers-container' id='Best Deals'>
+            <h1 className='offers-heading'>Diwali Offers products</h1>
 
-                <ul className='products-list-container'>
-                    {productsList.map(eachProduct => (
-                        <ProductItem key={eachProduct.id} eachProduct={eachProduct} />
-                    ))}
-                </ul>
-                <div className='buttons-container'>
-                    <button className='circle-button' type="button" onClick={onFirstButton}>
-                        <FiCircle fontSize={20} className={firstButton ? 'active-circle-icon' : 'circle-icon'} />
-                    </button>
-                    <button className='circle-button' type="button" onClick={onSecondButton}>
-                        <FiCircle fontSize={20} className={secondButton ? 'active-circle-icon' : 'circle-icon'} />
-                    </button>
-                    <button className='circle-button' type="button" onClick={onThirdButton}>
-                        <FiCircle fontSize={20} className={thirdButton ? 'active-circle-icon' : 'circle-icon'} />
-                    </button>
-                </div>
+            <ul className='products-list-container'>
+                {productsList.map(eachProduct => (
+                    <ProductItem key={eachProduct.id} eachProduct={eachProduct} />
+                ))}
+            </ul>
+            <div className='buttons-container'>
+                <button className='circle-button' type="button" onClick={onFirstButton}>
+                    <FiCircle fontSize={20} className={firstButtonClassName ? 'active-circle-icon' : 'circle-icon'} />
+                </button>
+                <button className='circle-button' type="button" onClick={onSecondButton}>
+                    <FiCircle fontSize={20} className={secondButtonClassName ? 'active-circle-icon' : 'circle-icon'} />
+                </button>
+                <button className='circle-button' type="button" onClick={onThirdButton}>
+                    <FiCircle fontSize={20} className={thirdButtonClassName ? 'active-circle-icon' : 'circle-icon'} />
+                </button>
             </div>
-        </>
+        </div>
     )
 }
 
